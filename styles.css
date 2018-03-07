@@ -1,0 +1,23 @@
+div.wa-extension {
+  position: absolute;
+  top: -21px;
+  left:3px;
+  clear:both;
+}
+
+div.wa-extension-button {
+  float:left;
+  margin: 0 2px;
+  padding: 3px;
+  cursor: pointer;
+  background: #f5f1ee;
+  border: 1px solid #f5f1ee;
+  border-radius: 3px 3px 0 0;
+  width: 9px;
+  transition: all .2s ease-in-out;
+}
+
+div.wa-extension-button.wa-hover {
+  background: linear-gradient(to top right, #f5f1ee, #bbb);
+  transform: scale(1.25);
+}

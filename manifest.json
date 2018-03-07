@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "WhatsApp Web Formatting",
+  "description": "This extension allows the user to use a simple GUI to add formatting to WhatsApp Web messages.",
+  "version": "1.2",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs", "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "scripts": ["jquery.js", "background.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["jquery.js", "extension.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
